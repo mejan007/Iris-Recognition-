@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Our App</h1>
+      <div class="lower">
+        <p>Please choose an option:</p>
+        <div class="buttons">
+          <a href="{% url 'register' %}">
+            <button>Register</button>
+          </a>
+          <a href="{% url 'login' %}">
+            <button>Login</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
